@@ -1,3 +1,6 @@
+#Assignment submission by Sanket bhat.
+#The files generated are pushed to Github - https://github.com/bhatsanket/IT497
+
 library(twitteR)
 library(httr)
 library(ROAuth)
@@ -25,5 +28,9 @@ length(tweets)
 tweets.text <- laply(tweets, function(t) t$getText())
 # Show text from first 5 tweets
 toFile <- head(tweets.text,5)
+toFile
 
+#The file created is pushed to Github - https://github.com/bhatsanket/IT497
 write.csv(toFile, file = 'TwitterData.csv', row.names = FALSE, na="")
+#plain file
+writeLines(toFile,'TwitterOut.txt')
