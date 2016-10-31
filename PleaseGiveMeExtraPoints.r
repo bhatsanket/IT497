@@ -17,6 +17,8 @@ url3 <-"https://raw.githubusercontent.com/jrwolf/IT497/master/apps_count.csv"
 x <- repmis::source_data(url3)
 y <- read.csv(url3)
 str(x)
+
+
 str(y)
 summary(x)
 summary(y)
